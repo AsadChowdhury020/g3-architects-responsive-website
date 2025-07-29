@@ -219,6 +219,15 @@ main>section {
     filter: grayscale(100%);
 }
 
+/*Footer Styles*/
+.footer {
+    max-width: 1440px;
+    margin: 30px auto;
+    padding: 40px 410px;
+    text-align: center;
+    border-radius: 8px;
+}
+
 /*Responsive media query for team and feature section*/
 /*Smaller device*/
 @media screen and (max-width: 576px) {
@@ -250,11 +259,17 @@ main>section {
         justify-items: center;
         gap: 20px;
     }
+
+    .footer {
+        padding: 40px;
+    }
 }
 
 /*Medium size device*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .team, .features{
+
+    .team,
+    .features {
         flex-direction: column;
     }
 
@@ -268,8 +283,13 @@ main>section {
         gap: 20px;
         justify-items: center;
     }
+
     #experience-badge {
         margin-top: 0px;
         margin-left: 0px;
+    }
+
+    .footer {
+        padding: 40px;
     }
 }
